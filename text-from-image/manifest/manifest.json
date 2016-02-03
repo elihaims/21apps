@@ -1,0 +1,43 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Text from image",
+        "description": "Find text in an image",
+        "x-21-usage": "Submit a URL to an image and get text found in image",
+        "x-21-quick-buy": "Download client from https://raw.githubusercontent.com/elihaims/21apps/master/text-to-image/client.py \n or use curl http://10.244.64.235:5003/analyze on 21BC",
+        "x-21-category": "Computer Vision",
+        "x-21-total-price": {
+            "min": 2000,
+            "max": 2000
+        },
+        "contact": {
+            "name": "Eli Haims",
+            "email": "eli@21.co",
+            "url": "https://21.co"
+        },
+        "x-21-keywords": [
+            "computer vision",
+	    "OCR",
+	    "text recognition"
+        ],
+        "version": "v0.1"
+    },
+    "host": "10.244.64.235:5003",
+    "schemes": [
+        "http"
+    ],
+    "basePath": "/",
+    "x-21-healthcheck-path": "/",
+    "x-21-manifest-path": "/manifest",
+    "paths": {
+        "/analyze": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}
