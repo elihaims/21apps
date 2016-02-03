@@ -3,8 +3,8 @@
     "info": {
         "title": "VADER Sentiment Analysis",
         "description": "Sentiment analysis specifically trained for social media text",
-        "x-21-usage": "Follow on screen instructions - submit text get positive/negative sentiment in (-1,1) range",
-        "x-21-quick-buy": "Download client from https://raw.githubusercontent.com/elihaims/21apps/master/sentiment-analysis/client.py\\n or use curl http://10.244.64.235:5002/ on 21BC",
+        "x-21-usage": "Submit text to get positive/negative sentiment normalized to (-1,1); Options for submitting: follow on screen prompt, pass -s flag and string of text, pass -f flag and path to text file",
+        "x-21-quick-buy": "Download client from https://raw.githubusercontent.com/elihaims/21apps/master/sentiment-analysis/client.py \\n or use curl http://10.244.64.235:5002/analyze on 21BC",
         "x-21-category": "Natural Language Processing",
         "x-21-total-price": {
             "min": 1000,
@@ -13,16 +13,14 @@
         "contact": {
             "name": "Eli Haims",
             "email": "eli@21.co",
-            "url": "https://21.co",
-            "x-21-github-profile-url": "https://github.com/elihaims",
-            "x-21-github-project-url": "https://github.com/elihaims/21apps/tree/master/sentiment-analysis"
+            "url": "https://21.co"
         },
         "x-21-keywords": [
             "sentiment",
             "VADAR",
             "NLP"
         ],
-        "version": "v0.1"
+        "version": "v0.2"
     },
     "host": "10.244.64.235:5002",
     "schemes": [
